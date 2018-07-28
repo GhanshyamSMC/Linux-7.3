@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- This is configuration file is used for configuring deployment machines -->
+<hosts>
+	<!-- Production machine ip, user and password . FO_Server<IP_LAST_DIGIT>_1 is configurred at \\192.168.105.6\E:\honey\server1 . 
+	 releaseFrom="<Release_Directory> optional. Value for releaseFrom can be left empty" -->
+	<!-- servers: Algo Servers configured on this machine -->		
+	<!-- <host ip="192.168.105.5" user="administrator" password="admin@1234">
+		<servers>
+			<server	dest="\honey\FO_Server5_2" drive="e$" activeMqPort="61617" type="server1" description="FO_Server5_2" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server dest="\honey\FO_Server5_1" drive="c$" activeMqPort="61616" type="server1" description="FO_Server5_1" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server dest="\honey\Tick_Server5_1" drive="c$" activeMqPort="61626"  type="server3" description="Tick_Server5_1" releaseFrom="E:\honey\deployment\server_release\latest"/>
+		</servers>
+		<clients>
+			<client dest="\honey\FO_Client5_2" drive="e$" type="client2" description="FO_Client5_2" server="FO_Server5_2" executionMode="prod" strategies="" releaseFrom="" releaseFrom="E:\honey\deployment\client_release\latest"/>
+			<client dest="\honey\FO_Client5_1" drive="c$" type="client1" description="FO_Client5_1" server="FO_Server5_1" executionMode="prod" strategies="" releaseFrom="" releaseFrom="E:\honey\deployment\client_release\latest"/>
+		</clients>
+	</host> -->
+	
+	<host ip="192.168.105.4" user="administrator" password="admin@1234">
+		<servers>	
+			<server	dest="\honey\FO_Server4_8" drive="e$" activeMqPort="61623"  type="server1" description="FO_Server4_8" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server	dest="\honey\FO_Server4_7" drive="e$" activeMqPort="61622"  type="server1" description="FO_Server4_7" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server	dest="\honey\FO_Server4_6" drive="e$" activeMqPort="61621"  type="server1" description="FO_Server4_6" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server	dest="\honey\FO_Server4_5" drive="e$" activeMqPort="61620"  type="server1" description="FO_Server4_5" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server	dest="\honey\FO_Server4_4" drive="e$" activeMqPort="61619"  type="server1" description="FO_Server4_4" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server	dest="\honey\FO_Server4_3" drive="e$" activeMqPort="61618"  type="server1" description="FO_Server4_3" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server	dest="\honey\FO_Server4_2" drive="e$" activeMqPort="61617"  type="server1" description="FO_Server4_2" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server dest="\honey\FO_Server4_1" drive="c$" activeMqPort="61616"  type="server1" description="FO_Server4_1" releaseFrom="E:\honey\deployment\server_release\latest"/>
+		</servers>
+		<clients>
+			<client dest="\honey\FO_Client4_1" drive="c$" type="client1" description="FO_Client4_1" server="FO_Server4_1" executionMode="prod" strategies="Ratio,Strangle" releaseFrom="E:\honey\deployment\client_release\latest"/>
+			<client dest="\honey\FO_Client4_2" drive="e$" type="client1" description="FO_Client4_2" server="FO_Server4_2" executionMode="prod" strategies="Ratio,Strangle" releaseFrom="E:\honey\deployment\client_release\latest"/>
+			<client dest="\honey\FO_Client4_3" drive="e$" type="client1" description="FO_Client4_3" server="FO_Server4_3" executionMode="prod" strategies="Ratio,Strangle" releaseFrom="E:\honey\deployment\client_release\latest"/>
+			<client dest="\honey\FO_Client4_4" drive="e$" type="client1" description="FO_Client4_4" server="FO_Server4_4" executionMode="prod" strategies="Ratio,Strangle" releaseFrom="E:\honey\deployment\client_release\latest"/>
+			<client dest="\honey\FO_Client4_5" drive="e$" type="client1" description="FO_Client4_5" server="FO_Server4_5" executionMode="prod" strategies="Ratio,Strangle" releaseFrom="E:\honey\deployment\client_release\latest"/>		
+			<client dest="\honey\FO_Client4_6" drive="e$" type="client1" description="FO_Client4_6" server="FO_Server4_6" executionMode="prod" strategies="Ratio,Strangle" releaseFrom="E:\honey\deployment\client_release\latest"/>
+			<client dest="\honey\FO_Client4_7" drive="e$" type="client1" description="FO_Client4_7" server="FO_Server4_7" executionMode="prod" strategies="Ratio,Strangle" releaseFrom="E:\honey\deployment\client_release\latest"/>
+			<client dest="\honey\FO_Client4_8" drive="e$" type="client1" description="FO_Client4_8" server="FO_Server4_8" executionMode="prod" strategies="Ratio,Strangle" releaseFrom="E:\honey\deployment\client_release\latest"/>
+		</clients>
+	</host>
+	
+	<host ip="192.168.105.6" user="administrator" password="admin@1234">
+		<servers>	
+			<server dest="\honey\FO_Server6_1" drive="c$" activeMqPort="61616"  type="server1" description="FO_Server6_1" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server	dest="\honey\FO_Server6_2" drive="c$" activeMqPort="61617"  type="server1" description="FO_Server6_2" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server	dest="\honey\FO_Server6_3" drive="c$" activeMqPort="61618"  type="server1" description="FO_Server6_3" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server	dest="\honey\FO_Server6_4" drive="c$" activeMqPort="61619"  type="server1" description="FO_Server6_4" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server	dest="\honey\FO_Server6_5" drive="c$" activeMqPort="61620"  type="server1" description="FO_Server6_5" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server	dest="\honey\FO_Server6_6" drive="c$" activeMqPort="61621"  type="server1" description="FO_Server6_6" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server	dest="\honey\FO_Server6_7" drive="c$" activeMqPort="61622"  type="server1" description="FO_Server6_7" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server	dest="\honey\FO_Server6_8" drive="c$" activeMqPort="61623"  type="server1" description="FO_Server6_8" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server	dest="\honey\FO_Server6_9" drive="c$" activeMqPort="61624"  type="server1" description="FO_Server6_9" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server	dest="\honey\FO_Server6_10" drive="c$" activeMqPort="61625"  type="server1" description="FO_Server6_10" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server dest="\honey\Tick_Server6_1" drive="c$" activeMqPort="61626"  type="server3" description="Tick_Server6_1" releaseFrom="E:\honey\deployment\server_release\latest"/> 
+		</servers>
+		<clients>
+			<client dest="\honey\FO_Client6_1" drive="c$" type="client1" description="FO_Client6_1" server="FO_Server6_1" executionMode="prod" strategies="Ratio,Strangle" releaseFrom="E:\honey\deployment\client_release\latest"/>
+			<client dest="\honey\FO_Client6_2" drive="c$" type="client1" description="FO_Client6_2" server="FO_Server6_2" executionMode="prod" strategies="Ratio,Strangle" releaseFrom="E:\honey\deployment\client_release\latest"/>
+			<client dest="\honey\FO_Client6_3" drive="c$" type="client1" description="FO_Client6_3" server="FO_Server6_3" executionMode="prod" strategies="Ratio,Strangle" releaseFrom="E:\honey\deployment\client_release\latest"/>
+			<client dest="\honey\FO_Client6_4" drive="c$" type="client1" description="FO_Client6_4" server="FO_Server6_4" executionMode="prod" strategies="Ratio,Strangle" releaseFrom="E:\honey\deployment\client_release\latest"/> 
+			<client dest="\honey\FO_Client6_5" drive="c$" type="client1" description="FO_Client6_5" server="FO_Server6_5" executionMode="prod" strategies="Ratio,Strangle" releaseFrom="E:\honey\deployment\client_release\latest"/>
+			<client dest="\honey\FO_Client6_6" drive="c$" type="client1" description="FO_Client6_6" server="FO_Server6_6" executionMode="prod" strategies="Ratio,Strangle" releaseFrom="E:\honey\deployment\client_release\latest"/>
+			<client dest="\honey\FO_Client6_7" drive="c$" type="client1" description="FO_Client6_7" server="FO_Server6_7" executionMode="prod" strategies="Ratio,Strangle" releaseFrom="E:\honey\deployment\client_release\latest"/>
+			<client dest="\honey\FO_Client6_8" drive="c$" type="client1" description="FO_Client6_8" server="FO_Server6_8" executionMode="prod" strategies="Ratio,Strangle" releaseFrom="E:\honey\deployment\client_release\latest"/>
+			<client dest="\honey\FO_Client6_9" drive="c$" type="client1" description="FO_Client6_9" server="FO_Server6_9" executionMode="prod" strategies="Ratio,Strangle" releaseFrom="E:\honey\deployment\client_release\latest"/>
+			<client dest="\honey\FO_Client6_10" drive="c$" type="client1" description="FO_Client6_10" server="FO_Server6_10" executionMode="prod" strategies="Ratio,Strangle" releaseFrom="E:\honey\deployment\client_release\latest"/>
+		</clients>
+	</host>
+</hosts>

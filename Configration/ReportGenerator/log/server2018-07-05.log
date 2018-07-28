@@ -1,0 +1,133 @@
+15:35:01,736 [main] INFO  ReportGenerator  - Xml File AbsolutePath is:/conf/applicationContext.xml
+15:35:01,807 [main] INFO  FileSystemXmlApplicationContext  - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@33a10788: startup date [Thu Jul 05 15:35:01 IST 2018]; root of context hierarchy
+15:35:01,833 [main] INFO  XmlBeanDefinitionReader  - Loading XML bean definitions from file [/ReportGenerator/conf/applicationContext.xml]
+15:35:02,002 [main] INFO  Version  - Hibernate Commons Annotations 3.2.0.Final
+15:35:02,005 [main] INFO  Environment  - Hibernate 3.6.3.Final
+15:35:02,005 [main] INFO  Environment  - hibernate.properties not found
+15:35:02,007 [main] INFO  Environment  - Bytecode provider name : javassist
+15:35:02,008 [main] INFO  Environment  - using JDK 1.4 java.sql.Timestamp handling
+15:35:02,074 [main] INFO  LocalSessionFactoryBean  - Building new Hibernate SessionFactory
+15:35:02,095 [main] INFO  HbmBinder  - Mapping class: com.algo.common.business.Execution -> algo.executions
+15:35:02,100 [main] INFO  HbmBinder  - Mapping class: com.algo.common.business.ChildOrder -> algo.active_child_orders
+15:35:02,100 [main] INFO  HbmBinder  - Mapping class: com.algo.server.persistence.ChildOrderAudit -> algo.child_order_audit
+15:35:02,101 [main] INFO  HbmBinder  - Mapping class: com.algo.server.persistence.TextObject -> algo.text_objects
+15:35:02,102 [main] INFO  HbmBinder  - Mapping class: com.algo.server.persistence.Login -> algo.login
+15:35:02,102 [main] INFO  HbmBinder  - Mapping class: com.algo.strategy.risk.RiskProperty -> algo.risk_properties
+15:35:02,102 [main] INFO  HbmBinder  - Mapping class: com.algo.common.staticdata.Contract -> algo.contract
+15:35:02,103 [main] INFO  HbmBinder  - Mapping class: com.algo.common.staticdata.Security -> algo.security
+15:35:02,103 [main] INFO  HbmBinder  - Mapping class: com.algo.server.persistence.Pnl -> algo.pnl
+15:35:02,104 [main] INFO  HbmBinder  - Mapping class: com.algo.common.staticdata.Bhavcopy -> algo.bhavcopy
+15:35:02,104 [main] INFO  HbmBinder  - Mapping class: com.algo.server.persistence.WatchList -> algo.watchlist
+15:35:02,105 [main] INFO  HbmBinder  - Mapping class: com.algo.common.event.strategy.ExecutionSummary -> algo.execution_summary
+15:35:02,107 [main] INFO  Configuration  - Hibernate Validator not found: ignoring
+15:35:02,109 [main] INFO  HibernateSearchEventListenerRegister  - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+15:35:02,121 [main] WARN  RootClass  - composite-id class does not override equals(): com.algo.common.staticdata.Bhavcopy
+15:35:02,121 [main] WARN  RootClass  - composite-id class does not override hashCode(): com.algo.common.staticdata.Bhavcopy
+15:35:02,122 [main] WARN  RootClass  - composite-id class does not override equals(): com.algo.strategy.risk.RiskProperty
+15:35:02,122 [main] WARN  RootClass  - composite-id class does not override hashCode(): com.algo.strategy.risk.RiskProperty
+15:35:02,124 [main] WARN  RootClass  - composite-id class does not override equals(): com.algo.server.persistence.TextObject
+15:35:02,124 [main] WARN  RootClass  - composite-id class does not override hashCode(): com.algo.server.persistence.TextObject
+15:35:02,124 [main] WARN  RootClass  - composite-id class does not override equals(): com.algo.server.persistence.Pnl
+15:35:02,124 [main] WARN  RootClass  - composite-id class does not override hashCode(): com.algo.server.persistence.Pnl
+15:35:02,125 [main] WARN  RootClass  - composite-id class does not override equals(): com.algo.server.persistence.WatchList
+15:35:02,125 [main] WARN  RootClass  - composite-id class does not override hashCode(): com.algo.server.persistence.WatchList
+15:35:02,126 [main] INFO  ConnectionProviderFactory  - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+15:35:02,372 [main] INFO  Dialect  - Using dialect: org.hibernate.dialect.DerbyDialect
+15:35:02,381 [main] INFO  SettingsFactory  - Database ->
+       name : MySQL
+    version : 5.6.28
+      major : 5
+      minor : 6
+15:35:02,381 [main] INFO  SettingsFactory  - Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.38 ( Revision: fe541c166cec739c74cc727c5da96c1028b4834a )
+      major : 5
+      minor : 1
+15:35:02,382 [main] INFO  TransactionFactoryFactory  - Using default transaction strategy (direct JDBC transactions)
+15:35:02,382 [main] INFO  TransactionManagerLookupFactory  - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+15:35:02,382 [main] INFO  SettingsFactory  - Automatic flush during beforeCompletion(): disabled
+15:35:02,382 [main] INFO  SettingsFactory  - Automatic session close at end of transaction: disabled
+15:35:02,383 [main] INFO  SettingsFactory  - Scrollable result sets: enabled
+15:35:02,383 [main] INFO  SettingsFactory  - JDBC3 getGeneratedKeys(): enabled
+15:35:02,383 [main] INFO  SettingsFactory  - Connection release mode: on_close
+15:35:02,383 [main] INFO  SettingsFactory  - Default batch fetch size: 1
+15:35:02,383 [main] INFO  SettingsFactory  - Generate SQL with comments: disabled
+15:35:02,383 [main] INFO  SettingsFactory  - Order SQL updates by primary key: disabled
+15:35:02,383 [main] INFO  SettingsFactory  - Order SQL inserts for batching: disabled
+15:35:02,383 [main] INFO  SettingsFactory  - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+15:35:02,384 [main] INFO  ASTQueryTranslatorFactory  - Using ASTQueryTranslatorFactory
+15:35:02,384 [main] INFO  SettingsFactory  - Query language substitutions: {}
+15:35:02,385 [main] INFO  SettingsFactory  - JPA-QL strict compliance: disabled
+15:35:02,385 [main] INFO  SettingsFactory  - Second-level cache: enabled
+15:35:02,385 [main] INFO  SettingsFactory  - Query cache: disabled
+15:35:02,385 [main] INFO  SettingsFactory  - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+15:35:02,385 [main] INFO  SettingsFactory  - Optimize cache for minimal puts: disabled
+15:35:02,385 [main] INFO  SettingsFactory  - Structured second-level cache entries: disabled
+15:35:02,387 [main] INFO  SettingsFactory  - Statistics: disabled
+15:35:02,387 [main] INFO  SettingsFactory  - Deleted entity synthetic identifier rollback: disabled
+15:35:02,387 [main] INFO  SettingsFactory  - Default entity-mode: pojo
+15:35:02,387 [main] INFO  SettingsFactory  - Named query checking : enabled
+15:35:02,387 [main] INFO  SettingsFactory  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+15:35:02,399 [main] INFO  SessionFactoryImpl  - building session factory
+15:35:02,403 [main] INFO  BasicTypeRegistry  - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@451001e5
+15:35:02,403 [main] INFO  BasicTypeRegistry  - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@2b40ff9c
+15:35:02,403 [main] INFO  BasicTypeRegistry  - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@3e08ff24
+15:35:02,404 [main] INFO  BasicTypeRegistry  - Type registration [blob] overrides previous : org.hibernate.type.BlobType@4d1c005e
+15:35:02,404 [main] INFO  BasicTypeRegistry  - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@4d1c005e
+15:35:02,404 [main] INFO  BasicTypeRegistry  - Type registration [clob] overrides previous : org.hibernate.type.ClobType@8462f31
+15:35:02,404 [main] INFO  BasicTypeRegistry  - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@8462f31
+15:35:02,404 [main] INFO  BasicTypeRegistry  - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@24569dba
+15:35:02,404 [main] INFO  BasicTypeRegistry  - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@5ddeb7cb
+15:35:02,645 [main] INFO  SessionFactoryObjectFactory  - Not binding factory to JNDI, no JNDI name configured
+15:35:02,647 [main] INFO  SchemaUpdate  - Running hbm2ddl schema update
+15:35:02,647 [main] INFO  SchemaUpdate  - fetching database metadata
+15:35:02,648 [main] INFO  SchemaUpdate  - updating schema
+15:35:02,696 [main] INFO  DatabaseMetadata  - table not found: algo.active_child_orders
+15:35:02,697 [main] INFO  DatabaseMetadata  - table not found: algo.bhavcopy
+15:35:02,698 [main] INFO  DatabaseMetadata  - table not found: algo.child_order_audit
+15:35:02,701 [main] INFO  DatabaseMetadata  - table not found: algo.contract
+15:35:02,701 [main] INFO  DatabaseMetadata  - table not found: algo.execution_summary
+15:35:02,702 [main] INFO  DatabaseMetadata  - table not found: algo.executions
+15:35:02,703 [main] INFO  DatabaseMetadata  - table not found: algo.login
+15:35:02,704 [main] INFO  DatabaseMetadata  - table not found: algo.pnl
+15:35:02,704 [main] INFO  DatabaseMetadata  - table not found: algo.risk_properties
+15:35:02,705 [main] INFO  DatabaseMetadata  - table not found: algo.security
+15:35:02,706 [main] INFO  DatabaseMetadata  - table not found: algo.text_objects
+15:35:02,706 [main] INFO  DatabaseMetadata  - table not found: algo.watchlist
+15:35:02,707 [main] INFO  DatabaseMetadata  - table not found: algo.active_child_orders
+15:35:02,707 [main] INFO  DatabaseMetadata  - table not found: algo.bhavcopy
+15:35:02,708 [main] INFO  DatabaseMetadata  - table not found: algo.child_order_audit
+15:35:02,708 [main] INFO  DatabaseMetadata  - table not found: algo.contract
+15:35:02,709 [main] INFO  DatabaseMetadata  - table not found: algo.execution_summary
+15:35:02,709 [main] INFO  DatabaseMetadata  - table not found: algo.executions
+15:35:02,710 [main] INFO  DatabaseMetadata  - table not found: algo.login
+15:35:02,710 [main] INFO  DatabaseMetadata  - table not found: algo.pnl
+15:35:02,711 [main] INFO  DatabaseMetadata  - table not found: algo.risk_properties
+15:35:02,711 [main] INFO  DatabaseMetadata  - table not found: algo.security
+15:35:02,712 [main] INFO  DatabaseMetadata  - table not found: algo.text_objects
+15:35:02,712 [main] INFO  DatabaseMetadata  - table not found: algo.watchlist
+15:35:02,720 [main] ERROR SchemaUpdate  - Unsuccessful: create table algo.active_child_orders (OBJECT_ID varchar(255) not null, SYMBOL varchar(255), SIDE varchar(30), QUANTITY double, PRICE double, CUM_QTY double, AVG_PX double, ORDER_TYPE varchar(30), ORD_STATUS varchar(30), PARENT_ID varchar(255), STRATEGY_ID varchar(255), MODIFIED timestamp, CREATED timestamp, SEQ_ID varchar(255), CLORDER_ID varchar(255), SERVER_ID varchar(255), primary key (OBJECT_ID))
+15:35:02,720 [main] ERROR SchemaUpdate  - Table 'active_child_orders' already exists
+15:35:02,720 [main] ERROR SchemaUpdate  - Unsuccessful: create table algo.bhavcopy (INSTRUMENT_NAME varchar(255) not null, ORDERSYMBOL varchar(255) not null, EXPIRY timestamp not null, STRIKE_PRICE varchar(255) not null, OPTION_TYPE varchar(255) not null, BHAV_DATE timestamp not null, OPEN double, CLOSE double, HIGH double, LOW double, SETTLE_PRICE double, CONTRACTS double, VAL double, OI double, OI_CHANGE double, ENABLED smallint, primary key (INSTRUMENT_NAME, ORDERSYMBOL, EXPIRY, STRIKE_PRICE, OPTION_TYPE, BHAV_DATE))
+15:35:02,720 [main] ERROR SchemaUpdate  - Table 'bhavcopy' already exists
+15:35:02,721 [main] ERROR SchemaUpdate  - Unsuccessful: create table algo.child_order_audit (AUDIT_ID varchar(255) not null, OBJECT_ID varchar(255), EXEC_TYPE varchar(30), SYMBOL varchar(255), SIDE varchar(30), QUANTITY double, PRICE double, CUM_QTY double, AVG_PX double, ORDER_TYPE varchar(30), ORD_STATUS varchar(30), PARENT_ID varchar(255), STRATEGY_ID varchar(255), MODIFIED timestamp, CREATED timestamp, SEQ_ID varchar(255), CLORDER_ID varchar(255), SERVER_ID varchar(255), primary key (AUDIT_ID))
+15:35:02,721 [main] ERROR SchemaUpdate  - Table 'child_order_audit' already exists
+15:35:02,721 [main] ERROR SchemaUpdate  - Unsuccessful: create table algo.contract (TOKEN integer not null, ASSET_TOKEN integer, INSTRUMENT_NAME varchar(255), ORDERSYMBOL varchar(255), SERIES varchar(255), EXPIRY integer, STRIKE_PRICE varchar(255), OPTION_TYPE varchar(255), RESERVED_IDENTIFIER integer, ADMISSION_TYPE integer, TRADING_STATUS_NORMAL integer, ELIGIBILITY_NORMAL integer, ISSUE_INFO_MATURITY_DATE integer, MINIMUM_LOT_SIZE integer, BOARD_LOT_QUANTITY integer, MINIMUM_SPREAD double, VOLUME_FREEZE_QTY double, LOW_PRICE_RANGE double, HIGH_PRICE_RANGE double, STOCK_NAME varchar(255), UNDERLYING_SYMBOL varchar(255), BASE_PRICE double, MARKET_WIDE_POSITION_LIMIT double, TRADING_MEMBER_POSITION_LIMIT double, MAX_BUY_QTY double, MAX_SELL_QTY double, MARGIN_PERCENT double, SYMBOL_BANNED smallint, ENABLED smallint, OPEN double, CLOSE double, HIGH double, LOW double, primary key (TOKEN))
+15:35:02,721 [main] ERROR SchemaUpdate  - Table 'contract' already exists
+15:35:02,721 [main] ERROR SchemaUpdate  - Unsuccessful: create table algo.execution_summary (id integer generated by default as identity, leg2_side varchar(30), leg1_side varchar(30), strategy_id varchar(255), server varchar(255), symbol varchar(255), strategy varchar(255), leg1_symbol varchar(255), leg2_symbol varchar(255), expiry integer, request_time timestamp, completion_time timestamp, price_requested double, price_got double, quantity double, leg1_price double, leg1_quantity double, leg2_price double, leg2_quantity double, primary key (id))
+15:35:02,721 [main] ERROR SchemaUpdate  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generated by default as identity, leg2_side varchar(30), leg1_side varchar(30), ' at line 1
+15:35:02,721 [main] ERROR SchemaUpdate  - Unsuccessful: create table algo.executions (OBJECT_ID varchar(255) not null, SYMBOL varchar(255), SIDE varchar(30), QUANTITY double, PRICE double, ORDER_ID varchar(255), PARENT_ID varchar(255), STRATEGY_ID varchar(255), EXEC_ID varchar(255), MODIFIED timestamp, CREATED timestamp, SEQ_ID varchar(255), SERVER_ID varchar(255), primary key (OBJECT_ID))
+15:35:02,721 [main] ERROR SchemaUpdate  - Table 'executions' already exists
+15:35:02,722 [main] ERROR SchemaUpdate  - Unsuccessful: create table algo.login (userid varchar(255) not null, password varchar(255), admin smallint, LastLoginTime timestamp, SERVER_ID varchar(255), primary key (userid))
+15:35:02,722 [main] ERROR SchemaUpdate  - Table 'login' already exists
+15:35:02,722 [main] ERROR SchemaUpdate  - Unsuccessful: create table algo.pnl (strategy_id varchar(255) not null, pnl_date timestamp not null, server_id varchar(255), pnl double, primary key (strategy_id, pnl_date))
+15:35:02,722 [main] ERROR SchemaUpdate  - Table 'pnl' already exists
+15:35:02,722 [main] ERROR SchemaUpdate  - Unsuccessful: create table algo.risk_properties (PROPERTY_NAME varchar(255) not null, SERVER_ID varchar(255) not null, PROPERTY_VALUE varchar(255), CURRENT_VALUE smallint, TIME_STAMP timestamp, primary key (PROPERTY_NAME, SERVER_ID))
+15:35:02,722 [main] ERROR SchemaUpdate  - Table 'risk_properties' already exists
+15:35:02,722 [main] ERROR SchemaUpdate  - Unsuccessful: create table algo.security (TOKEN integer not null, ORDERSYMBOL varchar(255), SERIES varchar(255), INSTRUMENT_TYPE integer, PERMITTED_TO_TRADE smallint, CREDIT_RATING varchar(255), SECURITY_STATUS integer, BOARD_LOT_QUANTITY integer, TICK_SIZE double, NAME varchar(255), FREEZE_PERCENT integer, MM_SPREAD double, MM_MIN_QTY double, ISIN varchar(255), MARKET_WIDE_POSITION_LIMIT double, TRADING_MEMBER_POSITION_LIMIT double, MAX_BUY_QTY double, MAX_SELL_QTY double, MARGIN_PERCENT double, SYMBOL_BANNED smallint, ENABLED smallint, OPEN double, CLOSE double, HIGH double, LOW double, primary key (TOKEN))
+15:35:02,722 [main] ERROR SchemaUpdate  - Table 'security' already exists
+15:35:02,723 [main] ERROR SchemaUpdate  - Unsuccessful: create table algo.text_objects (OBJECT_ID varchar(255) not null, OBJECT_TYPE varchar(40) not null, LINE_NO integer not null, TIME_STAMP timestamp, XML_TEXT varchar(255), SERVER_ID varchar(255), primary key (OBJECT_ID, OBJECT_TYPE, LINE_NO))
+15:35:02,723 [main] ERROR SchemaUpdate  - Table 'text_objects' already exists
+15:35:02,723 [main] ERROR SchemaUpdate  - Unsuccessful: create table algo.watchlist (user_id varchar(255) not null, symbol varchar(255) not null, server_id varchar(255) not null, creation_date timestamp, BFQty double, BFAvgPrice double, BFPnl double, is_neutral smallint, primary key (user_id, symbol, server_id))
+15:35:02,723 [main] ERROR SchemaUpdate  - Table 'watchlist' already exists
+15:35:02,723 [main] INFO  SchemaUpdate  - schema update complete

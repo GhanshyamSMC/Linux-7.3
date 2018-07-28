@@ -1,0 +1,114 @@
+<project>
+	<target name="deploy-client" depends="xmlTaskImport,init-properties">
+		<xmltask source="${config.file}" report="false">
+			<call path="//host">
+				<param name="ip" path="172.17.0.46"/>
+				<param name="user" path="root"/>
+				<param name="password" path="123456"/>
+				<actions>
+					<property name="user" value="@{user}"/>
+					<property name="ip" value="@{ip}"/>
+					<property name="password" value="@{password}"/>
+					<xmltask source="${config.file}" report="false">
+						<call path="//host[@ip='@{ip}']/*/client">
+							<param name="dest" path="@dest"/>
+							<param name="type" path="@type"/>
+							<param name="description" path="@description"/>
+							<param name="drive" path="@drive"/>
+							<param name="releaseFrom" path="@releaseFrom"/>
+							<actions>
+								<echo>
+								   Client Deployment:
+								   user: @{user}
+								   ip : @{ip}
+								   password : @{password}
+								   dest : @{dest}
+								   type : @{type}
+								   description : @{description}
+								   releaseFrom : @{releaseFrom}
+								</echo>
+								<exec dir="." executable="/bin/sh">
+									<arg value="-c" />
+									<arg value="deployment.bat" />
+									<env key="user" value="@{user}" />
+									<env key="ip" value="@{ip}" />
+									<env key="password" value="@{password}" />
+									<env key="dest" value="@{dest}" />
+									<env key="type" value="@{type}" />
+									<env key="description" value="@{description}" />
+									<env key="drive" value="@{drive}" />
+									<env key="releaseFrom" value="@{releaseFrom}" />
+									<env key="isServerDeployment" value="false" />
+								</exec>
+							</actions>
+						</call>
+					</xmltask>
+				</actions>	
+			</call>
+		</xmltask>
+	</target>
+
+	<target name="deploy">
+		<antcall target="deploy-server"/>
+		<antcall target="deploy-client"/>
+	</target>
+	
+	<target name="init-properties">
+		<property name="config.file" value="./config/deployment_config.xml" />
+	</target>
+	
+	<target name="deploy-server" depends="xmlTaskImport, init-properties">
+		<xmltask source="${config.file}" report="false">
+			<call path="//host">
+				<param name="ip" path="@ip"/>
+				<param name="user" path="@user"/>
+				<param name="password" path="@password"/>
+				<actions>
+					<property name="user" value="@{user}"/>
+					<property name="ip" value="@{ip}"/>
+					<property name="password" value="@{password}"/>
+					<xmltask source="${config.file}" report="false">
+						<call path="//host[@ip='@{ip}']/*/server">
+							<param name="dest" path="@dest"/>
+							<param name="type" path="@type"/>
+							<param name="description" path="@description"/>
+							<param name="drive" path="@drive"/>
+							<param name="releaseFrom" path="@releaseFrom"/>
+							<actions>
+								<echo>
+								   Server Deployment:
+								   user: @{user}
+								   ip : @{ip}
+								   password : @{password}
+								   dest : @{dest}
+								   type : @{type}
+								   description : @{description}
+								</echo> 
+								<exec dir="." executable="/bin/sh">
+									<arg value="-c" />
+									<arg value="./deployment.sh" />
+									<env key="user" value="@{user}" />
+									<env key="ip" value="@{ip}" />
+									<env key="password" value="@{password}" />
+									<env key="dest" value="@{dest}" />
+									<env key="type" value="@{type}" />
+									<env key="description" value="@{description}" />
+									<env key="drive" value="@{drive}" />
+									<env key="releaseFrom" value="@{releaseFrom}" />
+									<env key="isServerDeployment" value="true" />
+								</exec>
+							</actions>
+						</call>
+					</xmltask>
+				</actions>
+			</call>
+		</xmltask>		
+	</target>
+	<target name="xmlTaskImport">
+		<taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask">
+			 <classpath>
+				<fileset file="./jars/*.jar"/>
+			 </classpath>
+		</taskdef>
+	</target>
+</project>

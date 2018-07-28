@@ -1,0 +1,65 @@
+<!-- This is the main ant script to run the deployment task. Configure deployment 
+hosts and servers in deployment_config.xml before using this script. To run this 
+script go to the directory in which build.xml is kept. Open a cammand prompt and
+make your current working directory as the directory where build.xml is kept. Use
+command: ant > log.txt -->
+<project>
+	<!-- Import XmlTask -->
+	<taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask">
+		 <classpath>
+			<!-- Sets the jar required for XmlTask on classpath  -->
+			<fileset file="./jars/*.jar"/>
+		 </classpath>		  
+	</taskdef>
+	<property name="config.file" value="./config/deployment_config.xml"/>
+	<!-- XmlTask for servers deployment configured in deployment_config.xml 
+	<xmltask source="./../../../common/conf/deployment_config.xml" report="false">  -->
+	<xmltask source="${config.file}" report="false">
+		<!-- sets XPath to //host -->
+		<call path="//host">
+			<param name="ip" path="@ip"/>
+			<param name="user" path="@user"/>
+			<param name="password" path="@password"/>
+			<actions>
+				<!-- XmlTask for clients deployment configured in deployment_config.xml -->
+				<!-- <xmltask source="./../../../common/conf/deployment_config.xml" report="false"> -->
+				<xmltask source="${config.file}" report="false">
+					<!-- IP Filter for iterating only once over each server for each machine -->
+					<call path="//host[@ip='@{ip}']/*/client">
+						<param name="dest" path="@dest"/>
+						<param name="type" path="@type"/>
+						<param name="description" path="@description"/>
+						<param name="drive" path="@drive"/>
+						<param name="releaseFrom" path="@releaseFrom"/>
+						<actions>
+							<echo>
+							   Client Deployment:
+							   user: @{user}
+							   ip : @{ip}
+							   password : @{password}
+							   dest : @{dest}
+							   type : @{type}
+							   description : @{description}
+							   releaseFrom : @{releaseFrom}
+							</echo>
+							<!-- executes deployment.bat by passing required parameters as environment variables  -->
+							<exec dir="." executable="cmd.exe">
+								<arg value="/c" />
+								<arg value="deployment.bat" />
+								<env key="user" value="@{user}" />
+								<env key="ip" value="@{ip}" />
+								<env key="password" value="@{password}" />
+								<env key="dest" value="@{dest}" />
+								<env key="type" value="@{type}" />
+								<env key="description" value="@{description}" />
+								<env key="drive" value="@{drive}" />
+								<env key="releaseFrom" value="@{releaseFrom}" />
+								<env key="isServerDeployment" value="false" />
+							</exec>
+						</actions>
+					</call>
+				</xmltask>
+			</actions>
+		</call>
+	</xmltask>
+</project>

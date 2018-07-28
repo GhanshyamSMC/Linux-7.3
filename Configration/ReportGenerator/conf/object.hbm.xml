@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.algo.common.business.Execution" table="algo.executions">
+		<id column="OBJECT_ID" name="id" type="java.lang.String" />
+		<property column="SYMBOL" name="symbol" type="java.lang.String" />
+		<property column="SIDE" name="side" length="30">
+			<type name="org.hibernate.type.EnumType">
+				<param name="enumClass">com.algo.common.type.OrderSide</param>
+				<param name="type">12</param>
+			</type>
+		</property>
+		<property column="QUANTITY" name="quantity" type="java.lang.Double" />
+		<property column="PRICE" name="price" type="java.lang.Double" />
+		<property column="ORDER_ID" name="orderId" type="java.lang.String" />
+		<property column="PARENT_ID" name="parentOrderId" type="java.lang.String" />
+		<property column="STRATEGY_ID" name="strategyId" type="java.lang.String" />
+		<property column="EXEC_ID" name="execId" type="java.lang.String" />
+		<property column="MODIFIED" name="modified" type="java.util.Date" />
+		<property column="CREATED" name="created" type="java.util.Date" />
+		<property column="SEQ_ID" name="seqId" type="java.lang.String" />
+		<property column="SERVER_ID" name="serverId" type="java.lang.String" />
+	</class>
+<class name="com.algo.common.staticdata.Contract" table="algo.contract">
+		<id column="TOKEN" name="token" type="java.lang.Integer" />
+		<property column="ASSET_TOKEN" name="assetToken" type="java.lang.Integer" />
+		<property column="INSTRUMENT_NAME" name="instrumentName" type="java.lang.String" />
+		<property column="ORDERSYMBOL" name="orderSymbol" type="java.lang.String" />
+		<property column="SERIES" name="series" type="java.lang.String" />
+		<property column="EXPIRY" name="expiry" type="java.lang.Integer" />
+		<property column="STRIKE_PRICE" name="strikePrice" type="java.lang.String" />
+		<property column="OPTION_TYPE" name="optionType" type="java.lang.String" />
+		<property column="RESERVED_IDENTIFIER" name="reservedIdentifier" type="java.lang.Integer" />
+		<property column="ADMISSION_TYPE" name="admissionType" type="java.lang.Integer" />
+		<property column="TRADING_STATUS_NORMAL" name="tradingStatusNormal" type="java.lang.Integer" />
+		<property column="ELIGIBILITY_NORMAL" name="eligibilityNormal" type="java.lang.Integer" />
+		<property column="ISSUE_INFO_MATURITY_DATE" name="issueInfoMaturityDate" type="java.lang.Integer" />
+		<property column="MINIMUM_LOT_SIZE" name="minimumLotSize" type="java.lang.Integer" />
+		<property column="BOARD_LOT_QUANTITY" name="boardLotQuantity" type="java.lang.Integer" />
+		<property column="MINIMUM_SPREAD" name="minimumSpread" type="java.lang.Double" />
+		<property column="VOLUME_FREEZE_QTY" name="volumeFreezeQty" type="java.lang.Double" />
+		<property column="LOW_PRICE_RANGE" name="lowPriceRange" type="java.lang.Double" />
+		<property column="HIGH_PRICE_RANGE" name="highPriceRange" type="java.lang.Double" />
+		<property column="STOCK_NAME" name="stockName" type="java.lang.String" />
+		<property column="UNDERLYING_SYMBOL" name="underlyingSymbol" type="java.lang.String" />
+		<property column="BASE_PRICE" name="basePrice" type="java.lang.Double" />
+		<property column="MARKET_WIDE_POSITION_LIMIT" name="mwpl" type="java.lang.Double" />
+		<property column="TRADING_MEMBER_POSITION_LIMIT" name="tmpl" type="java.lang.Double" />
+		<property column="MAX_BUY_QTY" name="maxBuyQty" type="java.lang.Double" />
+		<property column="MAX_SELL_QTY" name="maxSellQty" type="java.lang.Double" />
+		<property column="MARGIN_PERCENT" name="marginPercent" type="java.lang.Double" />
+		<property column="SYMBOL_BANNED" name="symbolBanned" type="java.lang.Boolean" />
+		<property column="ENABLED" name="enabled" type="java.lang.Boolean" />
+		<property column="OPEN" name="open" type="java.lang.Double" />
+		<property column="CLOSE" name="close" type="java.lang.Double" />
+		<property column="HIGH" name="high" type="java.lang.Double" />
+		<property column="LOW" name="low" type="java.lang.Double" />
+	</class>
+
+<class name="com.algo.common.staticdata.Bhavcopy" table="algo.bhavcopy">
+		<composite-id>
+		<key-property column="INSTRUMENT_NAME" name="instrumentName" type="java.lang.String" />
+		<key-property column="ORDERSYMBOL" name="orderSymbol" type="java.lang.String" />
+		<key-property column="EXPIRY" name="expiry" type="java.util.Date" />
+		<key-property column="STRIKE_PRICE" name="strikePrice" type="java.lang.String" />
+		<key-property column="OPTION_TYPE" name="optionType" type="java.lang.String" />
+		<key-property column="BHAV_DATE" name="bhavDate" type="java.util.Date" />
+		</composite-id>
+		<property column="OPEN" name="open" type="java.lang.Double" />
+		<property column="CLOSE" name="close" type="java.lang.Double" />
+		<property column="HIGH" name="high" type="java.lang.Double" />
+		<property column="LOW" name="low" type="java.lang.Double" />
+		<property column="SETTLE_PRICE" name="settlePrice" type="java.lang.Double" />
+		<property column="CONTRACTS" name="contracts" type="java.lang.Double" />
+		<property column="VAL" name="val" type="java.lang.Double" />
+		<property column="OI" name="oi" type="java.lang.Double" />
+		<property column="OI_CHANGE" name="oiChange" type="java.lang.Double" />
+		<property column="ENABLED" name="enabled" type="java.lang.Boolean" />
+	</class>
+	
+</hibernate-mapping> 

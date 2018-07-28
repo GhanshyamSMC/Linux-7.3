@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- This is configuration file is used for configuring deployment machines -->
+<hosts>
+	<!-- Production machine ip, user and password . FO_Server<IP_LAST_DIGIT>_1 is configurred at \\192.168.105.6\E:\honey\server1 . 
+	 releaseFrom="<Release_Directory> optional. Value for releaseFrom can be left empty" -->
+	<!-- servers: Algo Servers configured on this machine -->		
+	<host ip="192.168.105.5" user="administrator" password="admin@1234">
+		<servers>
+			<server	dest="\honey\deployment_test\FO_Server5_2" drive="e$" activeMqPort="61617" type="server1" description="FO_Server5_2" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server dest="\honey\deployment_test\FO_Server5_1" drive="c$" activeMqPort="61616" type="server1" description="FO_Server5_1" releaseFrom="E:\honey\deployment\server_release\latest"/>
+		</servers>
+		<clients>
+			<client dest="\honey\deployment_test\FO_Client5_2" drive="e$" type="client2" description="FO_Client5_2" server="FO_Server5_2" releaseFrom="E:\honey\deployment\client_release\latest"/>
+			<client dest="\honey\deployment_test\FO_Client5_1" drive="c$" type="client1" description="FO_Client5_1" server="FO_Server5_1" releaseFrom="E:\honey\deployment\client_release\latest"/>
+		</clients>
+	</host>
+	<host ip="192.168.105.4" user="administrator" password="admin@1234">
+		<servers>	
+			<server	dest="\honey\deployment_test\FO_Server4_2" drive="e$" activeMqPort="61617"  type="server1" description="FO_Server4_2" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server dest="\honey\deployment_test\FO_Server4_1" drive="c$" activeMqPort="61616"  type="server1" description="FO_Server4_1" releaseFrom="E:\honey\deployment\server_release\latest"/>
+		</servers>
+		<clients>
+			<client dest="\honey\deployment_test\FO_Client4_1" drive="c$" type="client1" description="FO_Client4_1" server="FO_Server4_1" releaseFrom="E:\honey\deployment\client_release\latest"/>
+			<client dest="\honey\deployment_test\FO_Client4_2" drive="e$" type="client2" description="FO_Client4_2" server="FO_Server4_2" releaseFrom="E:\honey\deployment\client_release\latest"/>
+		</clients>
+	</host>
+	<host ip="192.168.105.3" user="administrator" password="admin@1234">
+        <servers>		
+			<server dest="\honey\deployment_test\FO_Server3_1" drive="c$" activeMqPort="61616"  type="server1" description="FO_Server3_1" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server dest="\honey\deployment_test\FO_Server3_2" drive="e$" activeMqPort="61617"  type="server1" description="FO_Server3_2" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server dest="\honey\deployment_test\Cash_Server3_1" drive="e$" activeMqPort="61621"  type="server2" description="Cash_Server3_1" releaseFrom="E:\honey\deployment\server_release\latest"/>
+		</servers>
+		<clients>
+			<client dest="\honey\deployment_test\FO_Client3_1" drive="c$" type="client1" description="FO_Client3_1" server="FO_Server3_1" releaseFrom="E:\honey\deployment\client_release\latest"/>
+			<client dest="\honey\deployment_test\Cash_Client3_1" drive="e$" type="client2" description="Cash_Client3_1" server="Cash_Server3_1" releaseFrom="E:\honey\deployment\client_release\latest"/>
+			<client dest="\honey\deployment_test\FO_Client3_2" drive="e$" type="client1" description="FO_Client3_2" server="FO_Server3_2" releaseFrom="E:\honey\deployment\client_release\latest"/>
+		</clients>
+	</host>
+	<host ip="192.168.105.6" user="administrator" password="admin@1234">
+		<servers>
+			<server	dest="\honey\deployment_test\FO_Server6_1" drive="c$" activeMqPort="61616" type="server1" description="FO_Server6_1" releaseFrom="E:\honey\deployment\server_release\latest"/>
+			<server dest="\honey\deployment_test\Cash_Server6_1" drive="e$" activeMqPort="61621" type="server1" description="Cash_Server6_1" releaseFrom="E:\honey\deployment\server_release\latest"/>
+		</servers>
+	</host>
+</hosts>

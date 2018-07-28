@@ -1,0 +1,1 @@
+ant deploy-client > log.txt

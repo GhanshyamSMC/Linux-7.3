@@ -1,0 +1,242 @@
+Unable to locate tools.jar. Expected to find it in /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.102-4.b14.el7.x86_64/lib/tools.jar
+Buildfile: /honey/deployment/scripts/build.xml
+
+xmlTaskImport:
+
+init-properties:
+
+deploy-server:
+     [echo] 
+     [echo] 								   Server Deployment:
+     [echo] 								   user: root
+     [echo] 								   ip : 172.17.0.46
+     [echo] 								   password : 123456
+     [echo] 								   dest : /honey/FO_Server7_M7
+     [echo] 								   type : server1
+     [echo] 								   description : FO_Server7_M7
+     [echo] 								
+     [exec] deployment started for: ip=172.17.0.46 type=server1 drive=c$ dest=/honey/FO_Server7_M7 description=FO_Server7_M7
+     [exec] Processing tokens=2
+     [exec] Processing delims
+     [exec] Processing ==
+     [exec] deleted logback-classic-1.1.2.jar and logback-core-1.1.2.jar from server/jars
+     [exec] src=/honey/deployment/server_release/latest releaseFrom=/honey/deployment/server_release/latest isServerDeployment=true dtStamp=20180716_164122
+     [exec] rm: cannot remove ‘/honey/deployment/server_release/latest/server/jars/logback-classic-1.1.2.jar’: No such file or directory
+     [exec] rm: cannot remove ‘/honey/deployment/server_release/latest/server/jars/logback-core-1.1.2.jar’: No such file or directory
+     [exec] ./deployment.sh: line 42: smbclient: command not found
+     [exec] deployment successfull. build is copied at /honey/FO_Server7_M7/V20180716_164122
+     [exec] rm: cannot remove ‘y:’: No such file or directory
+     [exec] rm: cannot remove ‘/delete’: No such file or directory
+     [echo] 
+     [echo] 								   Server Deployment:
+     [echo] 								   user: root
+     [echo] 								   ip : 172.17.0.46
+     [echo] 								   password : 123456
+     [echo] 								   dest : /honey/FO_Server7_10
+     [echo] 								   type : server1
+     [echo] 								   description : FO_Server7_10
+     [echo] 								
+     [exec] deployment started for: ip=172.17.0.46 type=server1 drive=c$ dest=/honey/FO_Server7_10 description=FO_Server7_10
+     [exec] rm: cannot remove ‘/honey/deployment/server_release/latest/server/jars/logback-classic-1.1.2.jar’: No such file or directoryProcessing tokens=2
+     [exec] 
+     [exec] Processing delims
+     [exec] Processing ==
+     [exec] rm: cannot remove ‘/honey/deployment/server_release/latest/server/jars/logback-core-1.1.2.jar’: No such file or directorydeleted logback-classic-1.1.2.jar and logback-core-1.1.2.jar from server/jars
+     [exec] 
+     [exec] src=/honey/deployment/server_release/latest releaseFrom=/honey/deployment/server_release/latest isServerDeployment=true dtStamp=20180716_164122./deployment.sh: line 42: smbclient: command not found
+     [exec] 
+     [exec] deployment successfull. build is copied at /honey/FO_Server7_10/V20180716_164122
+     [exec] rm: cannot remove ‘y:’: No such file or directory
+     [exec] rm: cannot remove ‘/delete’: No such file or directory
+     [echo] 
+     [echo] 								   Server Deployment:
+     [echo] 								   user: root
+     [echo] 								   ip : 172.17.0.46
+     [echo] 								   password : 123456
+     [echo] 								   dest : /honey/FO_Server7_9
+     [echo] 								   type : server1
+     [echo] 								   description : FO_Server7_9
+     [echo] 								
+     [exec] rm: cannot remove ‘/honey/deployment/server_release/latest/server/jars/logback-classic-1.1.2.jar’: No such file or directory
+     [exec] deployment started for: ip=172.17.0.46 type=server1 drive=c$ dest=/honey/FO_Server7_9 description=FO_Server7_9rm: cannot remove ‘/honey/deployment/server_release/latest/server/jars/logback-core-1.1.2.jar’: No such file or directory
+     [exec] 
+     [exec] Processing tokens=2
+     [exec] Processing delims./deployment.sh: line 42: smbclient: command not found
+     [exec] Processing ==
+     [exec] 
+     [exec] deleted logback-classic-1.1.2.jar and logback-core-1.1.2.jar from server/jars
+     [exec] src=/honey/deployment/server_release/latest releaseFrom=/honey/deployment/server_release/latest isServerDeployment=true dtStamp=20180716_164122
+     [exec] deployment successfull. build is copied at /honey/FO_Server7_9/V20180716_164122
+     [exec] rm: cannot remove ‘y:’: No such file or directory
+     [exec] rm: cannot remove ‘/delete’: No such file or directory
+     [echo] 
+     [echo] 								   Server Deployment:
+     [echo] 								   user: root
+     [echo] 								   ip : 172.17.0.46
+     [echo] 								   password : 123456
+     [echo] 								   dest : /honey/FO_Server7_8
+     [echo] 								   type : server1
+     [echo] 								   description : FO_Server7_8
+     [echo] 								
+     [exec] deployment started for: ip=172.17.0.46 type=server1 drive=c$ dest=/honey/FO_Server7_8 description=FO_Server7_8rm: cannot remove ‘/honey/deployment/server_release/latest/server/jars/logback-classic-1.1.2.jar’: No such file or directory
+     [exec] 
+     [exec] Processing tokens=2rm: cannot remove ‘/honey/deployment/server_release/latest/server/jars/logback-core-1.1.2.jar’: No such file or directory
+     [exec] Processing delims
+     [exec] 
+     [exec] Processing ==
+     [exec] ./deployment.sh: line 42: smbclient: command not founddeleted logback-classic-1.1.2.jar and logback-core-1.1.2.jar from server/jars
+     [exec] 
+     [exec] src=/honey/deployment/server_release/latest releaseFrom=/honey/deployment/server_release/latest isServerDeployment=true dtStamp=20180716_164122
+     [exec] deployment successfull. build is copied at /honey/FO_Server7_8/V20180716_164122
+     [exec] rm: cannot remove ‘y:’: No such file or directory
+     [exec] rm: cannot remove ‘/delete’: No such file or directory
+     [echo] 
+     [echo] 								   Server Deployment:
+     [echo] 								   user: root
+     [echo] 								   ip : 172.17.0.46
+     [echo] 								   password : 123456
+     [echo] 								   dest : /honey/FO_Server7_7
+     [echo] 								   type : server1
+     [echo] 								   description : FO_Server7_7
+     [echo] 								
+     [exec] deployment started for: ip=172.17.0.46 type=server1 drive=c$ dest=/honey/FO_Server7_7 description=FO_Server7_7
+     [exec] Processing tokens=2
+     [exec] Processing delims
+     [exec] Processing ==
+     [exec] deleted logback-classic-1.1.2.jar and logback-core-1.1.2.jar from server/jarsrm: cannot remove ‘/honey/deployment/server_release/latest/server/jars/logback-classic-1.1.2.jar’: No such file or directory
+     [exec] 
+     [exec] rm: cannot remove ‘/honey/deployment/server_release/latest/server/jars/logback-core-1.1.2.jar’: No such file or directory
+     [exec] src=/honey/deployment/server_release/latest releaseFrom=/honey/deployment/server_release/latest isServerDeployment=true dtStamp=20180716_164122
+     [exec] ./deployment.sh: line 42: smbclient: command not found
+     [exec] deployment successfull. build is copied at /honey/FO_Server7_7/V20180716_164122
+     [exec] rm: cannot remove ‘y:’: No such file or directory
+     [exec] rm: cannot remove ‘/delete’: No such file or directory
+     [echo] 
+     [echo] 								   Server Deployment:
+     [echo] 								   user: root
+     [echo] 								   ip : 172.17.0.46
+     [echo] 								   password : 123456
+     [echo] 								   dest : /honey/FO_Server7_6
+     [echo] 								   type : server1
+     [echo] 								   description : FO_Server7_6
+     [echo] 								
+     [exec] deployment started for: ip=172.17.0.46 type=server1 drive=c$ dest=/honey/FO_Server7_6 description=FO_Server7_6
+     [exec] Processing tokens=2
+     [exec] Processing delimsrm: cannot remove ‘/honey/deployment/server_release/latest/server/jars/logback-classic-1.1.2.jar’: No such file or directory
+     [exec] Processing ==
+     [exec] rm: cannot remove ‘/honey/deployment/server_release/latest/server/jars/logback-core-1.1.2.jar’: No such file or directory
+     [exec] 
+     [exec] deleted logback-classic-1.1.2.jar and logback-core-1.1.2.jar from server/jars./deployment.sh: line 42: smbclient: command not found
+     [exec] 
+     [exec] src=/honey/deployment/server_release/latest releaseFrom=/honey/deployment/server_release/latest isServerDeployment=true dtStamp=20180716_164122
+     [exec] deployment successfull. build is copied at /honey/FO_Server7_6/V20180716_164122
+     [exec] rm: cannot remove ‘y:’: No such file or directory
+     [exec] rm: cannot remove ‘/delete’: No such file or directory
+     [echo] 
+     [echo] 								   Server Deployment:
+     [echo] 								   user: root
+     [echo] 								   ip : 172.17.0.46
+     [echo] 								   password : 123456
+     [echo] 								   dest : /honey/FO_Server7_5
+     [echo] 								   type : server1
+     [echo] 								   description : FO_Server7_5
+     [echo] 								
+     [exec] deployment started for: ip=172.17.0.46 type=server1 drive=c$ dest=/honey/FO_Server7_5 description=FO_Server7_5
+     [exec] Processing tokens=2
+     [exec] Processing delims
+     [exec] Processing ==
+     [exec] deleted logback-classic-1.1.2.jar and logback-core-1.1.2.jar from server/jars
+     [exec] src=/honey/deployment/server_release/latest releaseFrom=/honey/deployment/server_release/latest isServerDeployment=true dtStamp=20180716_164122
+     [exec] rm: cannot remove ‘/honey/deployment/server_release/latest/server/jars/logback-classic-1.1.2.jar’: No such file or directory
+     [exec] rm: cannot remove ‘/honey/deployment/server_release/latest/server/jars/logback-core-1.1.2.jar’: No such file or directory
+     [exec] ./deployment.sh: line 42: smbclient: command not found
+     [exec] deployment successfull. build is copied at /honey/FO_Server7_5/V20180716_164122
+     [exec] rm: cannot remove ‘y:’: No such file or directory
+     [exec] rm: cannot remove ‘/delete’: No such file or directory
+     [echo] 
+     [echo] 								   Server Deployment:
+     [echo] 								   user: root
+     [echo] 								   ip : 172.17.0.46
+     [echo] 								   password : 123456
+     [echo] 								   dest : /honey/FO_Server7_4
+     [echo] 								   type : server1
+     [echo] 								   description : FO_Server7_4
+     [echo] 								
+     [exec] rm: cannot remove ‘/honey/deployment/server_release/latest/server/jars/logback-classic-1.1.2.jar’: No such file or directory
+     [exec] deployment started for: ip=172.17.0.46 type=server1 drive=c$ dest=/honey/FO_Server7_4 description=FO_Server7_4
+     [exec] rm: cannot remove ‘/honey/deployment/server_release/latest/server/jars/logback-core-1.1.2.jar’: No such file or directory
+     [exec] ./deployment.sh: line 42: smbclient: command not foundProcessing tokens=2
+     [exec] 
+     [exec] Processing delims
+     [exec] Processing ==
+     [exec] deleted logback-classic-1.1.2.jar and logback-core-1.1.2.jar from server/jars
+     [exec] src=/honey/deployment/server_release/latest releaseFrom=/honey/deployment/server_release/latest isServerDeployment=true dtStamp=20180716_164123
+     [exec] deployment successfull. build is copied at /honey/FO_Server7_4/V20180716_164123
+     [exec] rm: cannot remove ‘y:’: No such file or directory
+     [exec] rm: cannot remove ‘/delete’: No such file or directory
+     [echo] 
+     [echo] 								   Server Deployment:
+     [echo] 								   user: root
+     [echo] 								   ip : 172.17.0.46
+     [echo] 								   password : 123456
+     [echo] 								   dest : /honey/FO_Server7_3
+     [echo] 								   type : server1
+     [echo] 								   description : FO_Server7_3
+     [echo] 								
+     [exec] deployment started for: ip=172.17.0.46 type=server1 drive=c$ dest=/honey/FO_Server7_3 description=FO_Server7_3
+     [exec] Processing tokens=2
+     [exec] Processing delims
+     [exec] Processing ==
+     [exec] deleted logback-classic-1.1.2.jar and logback-core-1.1.2.jar from server/jars
+     [exec] rm: cannot remove ‘/honey/deployment/server_release/latest/server/jars/logback-classic-1.1.2.jar’: No such file or directorysrc=/honey/deployment/server_release/latest releaseFrom=/honey/deployment/server_release/latest isServerDeployment=true dtStamp=20180716_164123
+     [exec] rm: cannot remove ‘/honey/deployment/server_release/latest/server/jars/logback-core-1.1.2.jar’: No such file or directory
+     [exec] 
+     [exec] ./deployment.sh: line 42: smbclient: command not found
+     [exec] deployment successfull. build is copied at /honey/FO_Server7_3/V20180716_164123
+     [exec] rm: cannot remove ‘y:’: No such file or directory
+     [exec] rm: cannot remove ‘/delete’: No such file or directory
+     [echo] 
+     [echo] 								   Server Deployment:
+     [echo] 								   user: root
+     [echo] 								   ip : 172.17.0.46
+     [echo] 								   password : 123456
+     [echo] 								   dest : /honey/FO_Server7_2
+     [echo] 								   type : server1
+     [echo] 								   description : FO_Server7_2
+     [echo] 								
+     [exec] deployment started for: ip=172.17.0.46 type=server1 drive=c$ dest=/honey/FO_Server7_2 description=FO_Server7_2
+     [exec] Processing tokens=2
+     [exec] Processing delims
+     [exec] Processing ==
+     [exec] deleted logback-classic-1.1.2.jar and logback-core-1.1.2.jar from server/jars
+     [exec] src=/honey/deployment/server_release/latest releaseFrom=/honey/deployment/server_release/latest isServerDeployment=true dtStamp=20180716_164123
+     [exec] rm: cannot remove ‘/honey/deployment/server_release/latest/server/jars/logback-classic-1.1.2.jar’: No such file or directory
+     [exec] rm: cannot remove ‘/honey/deployment/server_release/latest/server/jars/logback-core-1.1.2.jar’: No such file or directory
+     [exec] ./deployment.sh: line 42: smbclient: command not found
+     [exec] deployment successfull. build is copied at /honey/FO_Server7_2/V20180716_164123
+     [exec] rm: cannot remove ‘y:’: No such file or directory
+     [exec] rm: cannot remove ‘/delete’: No such file or directory
+     [echo] 
+     [echo] 								   Server Deployment:
+     [echo] 								   user: root
+     [echo] 								   ip : 172.17.0.46
+     [echo] 								   password : 123456
+     [echo] 								   dest : /honey/FO_Server7_1
+     [echo] 								   type : server1
+     [echo] 								   description : FO_Server7_1
+     [echo] 								
+     [exec] rm: cannot remove ‘/honey/deployment/server_release/latest/server/jars/logback-classic-1.1.2.jar’: No such file or directory
+     [exec] deployment started for: ip=172.17.0.46 type=server1 drive=c$ dest=/honey/FO_Server7_1 description=FO_Server7_1rm: cannot remove ‘/honey/deployment/server_release/latest/server/jars/logback-core-1.1.2.jar’: No such file or directory
+     [exec] 
+     [exec] Processing tokens=2
+     [exec] Processing delims
+     [exec] Processing ==
+     [exec] ./deployment.sh: line 42: smbclient: command not found
+     [exec] deleted logback-classic-1.1.2.jar and logback-core-1.1.2.jar from server/jars
+     [exec] src=/honey/deployment/server_release/latest releaseFrom=/honey/deployment/server_release/latest isServerDeployment=true dtStamp=20180716_164123
+     [exec] deployment successfull. build is copied at /honey/FO_Server7_1/V20180716_164123
+     [exec] rm: cannot remove ‘y:’: No such file or directory
+     [exec] rm: cannot remove ‘/delete’: No such file or directory
+
+BUILD SUCCESSFUL
+Total time: 1 second

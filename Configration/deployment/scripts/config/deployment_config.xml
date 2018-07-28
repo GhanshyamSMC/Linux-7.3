@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- This is configuration file is used for configuring deployment machines -->
+<hosts>
+	<!-- Production machine ip, user and password . FO_Server<IP_LAST_DIGIT>_1 is configurred at \\192.168.105.6\E:\honey\server1 . 
+	 releaseFrom="<Release_Directory> optional. Value for releaseFrom can be left empty" -->
+	<!-- servers: Algo Servers configured on this machine -->		
+	
+	<host ip="172.17.0.46" user="root" password="123456">
+	    <servers>
+			<server dest="/honey/FO_Server7_M7"  drive="c$" activeMqPort="61625"  type="server1" description="FO_Server7_M7"  releaseFrom="/honey/deployment/server_release/latest"/>	
+			<server dest="/honey/FO_Server7_10"  drive="c$" activeMqPort="61620"  type="server1" description="FO_Server7_10"  releaseFrom="/honey/deployment/server_release/latest"/>
+			<server dest="/honey/FO_Server7_9"  drive="c$" activeMqPort="61619"  type="server1" description="FO_Server7_9"  releaseFrom="/honey/deployment/server_release/latest"/>
+			<server dest="/honey/FO_Server7_8"  drive="c$" activeMqPort="61618"  type="server1" description="FO_Server7_8"  releaseFrom="/honey/deployment/server_release/latest"/>
+			<server dest="/honey/FO_Server7_7"  drive="c$" activeMqPort="61617"  type="server1" description="FO_Server7_7"  releaseFrom="/honey/deployment/server_release/latest"/>	
+			<server dest="/honey/FO_Server7_6"  drive="c$" activeMqPort="61616"  type="server1" description="FO_Server7_6"  releaseFrom="/honey/deployment/server_release/latest"/>
+			<server dest="/honey/FO_Server7_5"  drive="c$" activeMqPort="61620"  type="server1" description="FO_Server7_5"  releaseFrom="/honey/deployment/server_release/latest"/>
+			<server dest="/honey/FO_Server7_4"  drive="c$" activeMqPort="61619"  type="server1" description="FO_Server7_4"  releaseFrom="/honey/deployment/server_release/latest"/>
+			<server dest="/honey/FO_Server7_3"  drive="c$" activeMqPort="61618"  type="server1" description="FO_Server7_3"  releaseFrom="/honey/deployment/server_release/latest"/>
+			<server dest="/honey/FO_Server7_2"  drive="c$" activeMqPort="61617"  type="server1" description="FO_Server7_2"  releaseFrom="/honey/deployment/server_release/latest"/>
+			<server dest="/honey/FO_Server7_1"  drive="c$" activeMqPort="61616"  type="server1" description="FO_Server7_1"  releaseFrom="/honey/deployment/server_release/latest"/>
+		</servers>
+		<clients>
+		</clients>
+	</host>
+</hosts>
