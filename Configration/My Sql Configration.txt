@@ -1,0 +1,70 @@
+Mysql configuration : = >
+______________________________________________________________________________________________
+
+1)Default password reset : ->
+	mysql -p
+	mysql> SET PASSWORD FOR 'root'@'localhost' = PASSWORD('new_password');
+______________________________________________________________________________________________
+
+2)Create host user : ->
+
+	CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+	user with the name root , and the password root
+	ex .) CREATE USER 'root'@'192.168.101.43' IDENTIFIED BY 'root';
+
+______________________________________________________________________________________________
+	
+3)GRANT PRIVILEGES User : ->
+
+	ALL PRIVILEGES- as we saw previously, this would allow a MySQL user full access to a 
+	designated database (or if no database is selected, global access across the system)
+
+	GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
+	Ex.) GRANT ALL PRIVILEGES ON * . * TO 'root'@' localhost ';
+	flush privileges;
+
+	SHOW GRANTS FOR 'admin'@'localhost';
+______________________________________________________________________________________________
+
+4)Show all Database User : ->
+
+	select Host,User from mysql.user;
+
+	#DROP USER
+	#DROP USER 'testuser'@'localhost';
+______________________________________________________________________________________________
+
+5)Create Database  : ->
+
+	create database algo;
+______________________________________________________________________________________________
+
+6)Select Database : ->
+
+	use algo;
+______________________________________________________________________________________________
+
+
+7)Show Database : ->
+
+	show databases;
+______________________________________________________________________________________________
+
+8)Create Tables : ->
+
+	show tables;
+______________________________________________________________________________________________
+
+
+9)Mysql service restart  : ->
+
+	service mysql restart
+______________________________________________________________________________________________
+
+10)Mysql Password reset : ->
+
+	UPDATE mysql.user SET authentication_string ='W3s0OXamTuWB05Gw', password_expired = 'N' 
+	WHERE User = 'root' AND Host = 'localhost';
+
+	ALTER USER 'root'@'localhost' IDENTIFIED BY 'W3s0OXamTuWB05Gw';
+______________________________________________________________________________________________

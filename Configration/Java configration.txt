@@ -1,0 +1,28 @@
+Java configuration  : ->
+
+______________________________________________________________________________________________
+
+downlaod  -> yum install java
+
+______________________________________________________________________________________________
+
+multiple version selection ->sudo alternatives --config java
+
+______________________________________________________________________________________________
+
+Envirement variable set -> 
+
+	JAVA ->  
+		export JAVA_HOME=/usr/lib/jvm/jre-1.8.0-openjdk.x86_64
+		export PATH=$JAVA_HOME/bin:$PATH
+	________________________________________________________________	
+
+	ANT ->
+		export ANT_HOME=/apache-ant-1.9.11	
+		export PATH=$ANT_HOME/bin:$JAVA_HOME/bin:$PATH	
+______________________________________________________________________________________________
+
+check java version => java -version
+check ant version =>  ant –version
+
+______________________________________________________________________________________________
