@@ -1,0 +1,46 @@
+Linux Machine configuration setup :-
+
+IT Team Side(Alokji) :-
+Linux Centos 7.3.1611 (Core) 
+•	Install MySQL
+•	Set Exchange IP
+•	TAP configuration
+•	Repo
+•	JAVA
+•	Firewall Disable
+•	Date and Time setting
+•	NTP Server
+
+
+First Team Side : - 
+•	JAVA , ANT Environment Variables set (ANT Version = apache-ant-1.9.11)
+•	Database Setup – SSH Host User 
+•	Etc\ Hosts File - Change Host IP
+•	HeidiSQL Database Application install and Configuration on Terminal Server 
+•	TBT,OMS,Server,Cleint setup Deployment
+•	.SH  File Permission
+•	Check Contract and Bhavcopy
+•	Configure CronTab(Job) For scheduler
+•	Configuration and Set Task : Report Generator , DB-backup , Logs Backup , Bhavcopy , LD Backup
+•	Create Folder Contracts
+•	Set Reboot Scheduler
+•	Check Tap Parameter and configuration
+•	Check NTP (Time Zone)
+•	SSH keyGenrator
+•	Show BOD Logs .batch File Creation
+•	Create $Admin Shortcut run (Servers)
+•	Configuration Deployment Setup
+•	OMS,TBT,Servers in Particular Server.sh File and Common_server.sh file in Define Process name
+•	172.17.0.43(Linux) ,172.17.0.21(Windows) create directory for logs and Database Backup
+•	Check Server and Terminal Version
+•	NIFTY and BANKNIFTY TBT Configuration in MaxDepth =1
+•	If Possible NNF Check
+•	Check Algo Id in Template Folder -> Strategy File Ratio,Vol,IceBurge,ButterFly,gammasclping,Strangle
+•	Configuration First Feed for Linux and MaxDepth =1
+•	Create kill all Process Id .batch file
+•	Configurations Database Import Folder  For Import Contract
+
+
+
+
+Note: - Access Server using putty and winscp on Terminal Machine .
