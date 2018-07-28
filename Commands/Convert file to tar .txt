@@ -1,0 +1,3 @@
+tar -cvzf 2018.tar.gz 2018-06-19-2.log
+
+tar -cvzf FilenewName.tar.gz Filename

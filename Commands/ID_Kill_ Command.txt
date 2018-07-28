@@ -1,0 +1,11 @@
+netstat -nap|grep 11101
+
+
+
+pkill -9 -f oms18
+
+pkill -9 -f tbtnifty
+
+pkill -9 f tbtbanknifty
+
+pkill -9 -f s1801
