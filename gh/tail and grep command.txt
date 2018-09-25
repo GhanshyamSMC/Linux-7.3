@@ -1,0 +1,29 @@
+tail -100  logfilename > new file name
+
+
+
+tail -n 100 logfile name
+
+
+search line
+
+____
+
+grep -i "server is ready"  logfile name
+
+
+grep -i -e "hello" -e "world" -e "tester" abc.log
+
+grep 'hello\|world\|tester' abc.log
+
+egrep 'hello|world|tester' abc.log
+
+
+down vote
+I would use a regular expression, like this:
+
+grep -E 'hello|world|tester' abc.log
+
+
+
+grep -i -e "server is ready" -e "9943" logfile

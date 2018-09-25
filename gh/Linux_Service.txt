@@ -1,0 +1,171 @@
+lscpu   ------cpu information
+free -g  ------ram information
+
+
+
+service ntpd start
+chkconfig ntpd on
+
+
+systemctl enable ntpd
+
+service ntpd restart
+service ntpd start
+
+
+
+
+rpm -qa |grep -i mariadb
+yum remove mariadb
+
+service mysql start
+mysql -u root -p
+
+
+systemctl enable chronyd.service crond.service 
+chkconfig ntpd on
+
+chmod +X
+
+ vim alok.repo
+  135  createrepo -d /home/tools/centos7.3
+  136  yum clean all
+  137  yum list all
+
+
+First Software  Before Run Deployment in linux do this first
+
+1.export ANT_HOME=/apache-ant-1.9.11
+2.export PATH=$ANT_HOME/bin:$JAVA_HOME/bin:$PATH
+
+
+
+
+01 16 * * * cd /honey/work/admin;./database_Bak.sh
+03 16 * * * cd /honey/work/admin;./logs_Bak.sh
+35 15 * * * cd /ReportGenerator;./ReportGenerator.sh
+30 19 * * * cd /ReportGenerator;./BhavcopyUploader.sh
+15 16 * * * cd /honey/work/admin;./LDBackup.sh
+00 21 * * * /sbin/shutdown -r now
+
+
+
+
+
+
+
+touch /etc/init.d/crond       use this for  before tap install
+
+ cat /etc/redhat-release
+
+rm -rf /usr/bin/TAP/
+rm -rf /etc/TAP_REGISTRY/
+
+
+Restore database dump file
+mysql -u [new_user] -p [database_name] < [file_name].sql
+
+Backup of a single database
+mysqldump -u [user] -p [database_name] > [filename].sql
+
+
+
+
+
+
+
+ mysqldump -u [username] –p[password] [database_name] > [dump_file.sql]    database backup
+
+ mysqldump -uroot -p test >test19.sql
+
+
+
+
+
+
+date +%Y%m%d_%H%M%S`.db
+
+#!/bin/sh -e
+mysqldump -uroot -psmc@123 test > "database"$(date +%Y%m%d).sql
+
+
+45 12 * * *   /root/database_Bak.sh
+
+yum install cronie
+
+
+ crontab
+# +---------------- minute (0 - 59)
+# |  +------------- hour (0 - 23)
+# |  |  +---------- day of month (1 - 31)
+# |  |  |  +------- month (1 - 12)
+# |  |  |  |  +---- day of week (0 - 6) (Sunday=0)
+# |  |  |  |  |
+  *  *  *  *  *  command to be executed
+
+
+systemctl status crond
+
+service crond status
+
+
+
+For Tap Install
+
+
+touch /etc/init.d/crond   (before tap install run this)
+
+
+00 21 * * * /sbin/shutdown -r now   (Reboot crontab)
+
+date +%T -s "11:14:00"   (linux time set)
+
+date +%Y%m%d -s "20120418"  (Linux Date set)
+
+
+:%s/change_password=0/change_password=1/g       (find and replace command)
+
+sed -i 's/new_password=Smc@1405/new_password=Smc@2005/g' utrade.conf          (Without open conf file find and replace)
+---vim -c ‘%s/PATTERN/NEWPATTERN/gc’ -c ‘wq’ FILE_NAME
+
+:%s/change_password=0/change_password=1
+:%s/new_password=Nse@2802/new_password=Nse@1405
+
+:%s/change_password=1/change_password=0
+:%s/password=Nse@1405/password=Nse@2802
+
+
+
+
+[root@localhost honey]# service firewalld status
+Redirecting to /bin/systemctl status  firewalld.service
+â firewalld.service - firewalld - dynamic firewall daemon
+   Loaded: loaded (/usr/lib/systemd/system/firewalld.service; disabled; vendor preset: enabled)
+   Active: inactive (dead)
+     Docs: man:firewalld(1)
+[root@localhost honey]# service firewalld stop
+Redirecting to /bin/systemctl stop  firewalld.service
+[root@localhost honey]# chkconfig firewalld off
+Note: Forwarding request to 'systemctl disable firewalld.service'.
+[root@localhost honey]#
+
+
+ tar -cvzf 2018.tar.gz 2018-06-19-2.log
+
+
+rpm -qa |grep -i mariadb
+
+
+
+
+rmp -ivh MySQL-client-5.6.28-1.el6.x86_64.rpm
+rpm -ivh MySQL-client-5.6.28-1.el6.x86_64.rpm
+rpm -ivh MySQL-devel-5.6.28-1.el6.x86_64.rpm
+rpm -ivh MySQL-embedded-5.6.28-1.el6.x86_64.rpm
+rpm -ivh MySQL-shared-5.6.28-1.el6.x86_64.rpm
+rpm -ivh MySQL-shared-compat-5.6.28-1.el6.x86_64.rpm
+rpm -ivh MySQL-test-5.6.28-1.el6.x86_64.rpm
+rpm -ivh MySQL-server-5.6.28-1.el6.x86_64.rpm
+
+
+

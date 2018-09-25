@@ -1,0 +1,31 @@
+Linux Command : ->
+
+1.	file/folder transfer to other linux machine  ->
+scp -r (file/folder name)FO_MTBT_21_1 @172.17.0.53:/root(directory name) 
+ex.) [root@firstS2100 admin]# scp -r database_Bak.sh db-backup @172.17.0.45:/honey/work/admin
+?	local machine transfer 
+local machine - scp -r  /honey/FO_Server18_1/V20180407_000000/server/  /honey/deployment/server_release/latest/
+
+2.	kill process :- >
+-	kill PID
+-	ps -ef |grep java details port or process
+
+3.	log file status (particular log file status)
+-	grep -i connected server2018-04-11.log
+
+
+       5.  log file last line read: -
+	-  tail server2018-04-11.log (log file name)
+
+6.	open file -> vi filename  Exit -> :q!
+      8. edit file -> 
+-	open file 
+-	press insert button 
+-	edit file 
+-	press Esc button 
+-	:wq!
+     9. make dir/folder -> mkdir dirname
+     10.  remove dir/folder -  rm -rf server_old
+    11.  add tcp dump -> yum install tcpdump
+    12. add cornie -> yum install cronie
+	Uninstall -> yum remove cronie

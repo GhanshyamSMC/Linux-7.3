@@ -1,0 +1,2 @@
+NZYc8Yb7Hq2uTXO1
+SET authentication_string = PASSWORD('123456'), password_expired = 'N' WHERE User = 'root' AND Host = 'localhost';
