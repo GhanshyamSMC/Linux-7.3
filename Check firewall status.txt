@@ -1,0 +1,14 @@
+[root@rhel7 ~]# systemctl status firewalld
+firewalld.service - firewalld - dynamic firewall daemon
+   Loaded: loaded (/usr/lib/systemd/system/firewalld.service; enabled)
+   Active: active (running) since Thu 2014-09-04 19:18:47 EST; 3 months 28 days ago
+ Main PID: 539 (firewalld)
+   CGroup: /system.slice/firewalld.service
+           +-539 /usr/bin/python -Es /usr/sbin/firewalld --nofork --nopid
+
+Sep 04 19:18:45 rhel7 systemd[1]: Starting firewalld - dynamic firewall daemon...
+Sep 04 19:18:47 rhel7 systemd[1]: Started firewalld - dynamic firewall daemon.
+
+
+systemctl stopfirewalld
+systemctl disable firewalld
